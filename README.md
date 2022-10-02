@@ -12,6 +12,64 @@ pip install thirdweb-sdk
 
 ## Metadata
 
+You need to allocate all your cases data to be parsed by this script, on a data.json file at root of the repo folder. This file, will contain a list of objects in the form of:
 
+```bash
+{
+    "data": [
+        {
+            "name": "",
+            "description": "",
+            "image": "",
+            "Gender": "",
+            "Age": "",
+            "Location": "",
+            "Relationship of technology and climate change": "",
+            "Responsible for climate change": "",
+            "internet bandwidth": "",
+            "Major connection hours": "",
+            "Screen hours per week": "",
+            "Screen hours per weekend": "",
+            "Concern about climate change": "",
+            "Feelings about climate change": "",
+            "Thoughts about climate change": "",
+            "DAST": "",
+            "Climate anxiety index": "",
+            "Technology intoxication index*": "",
+            "Digital addiction level": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "image": "",
+            "Gender": "",
+            "Age": "",
+            "Location": "",
+            "Relationship of technology and climate change": "",
+            "Responsible for climate change": "",
+            "internet bandwidth": "",
+            "Major connection hours": "",
+            "Screen hours per week": "",
+            "Screen hours per weekend": "",
+            "Concern about climate change": "",
+            "Feelings about climate change": "",
+            "Thoughts about climate change": "",
+            "DAST": "",
+            "Climate anxiety index": "",
+            "Technology intoxication index*": "",
+            "Digital addiction level": ""
+        },
+}
+```
+
+## Run the script
+
+When you are ready, you can run the script to mint all your NFTs with this command:
+    ```bash
+    python3 script.py
+    ```
+
+This will load your cases data, parse it by the Case object class and build its treats, then will load each json metadata and mint it with your NFT Collection smartcontract. 
+ 
 ## License
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.es)
